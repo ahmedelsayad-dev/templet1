@@ -1,0 +1,369 @@
+/*comman*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.clear{
+    clear: both;
+}
+.pd-y{
+    padding: 100px 0;
+}
+/*header section*/
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+.header .logo-image{
+    width: 40%;
+    float: left;
+   
+}
+.header .nav{
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+.header .logo-image img{
+    width: 20%;
+    margin-top: 17px
+}
+.header .nav > li{
+    text-align: right;
+    display: inline-block;
+}
+.header .nav > li > a{
+    text-decoration: none;
+    display: block;
+    padding: 30px 17px;
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.header .nav > li > a.active:after,
+.header .nav > li > a:after{
+         content: "";
+         display: block;
+         height: 3px;
+         background-color: dodgerblue;
+         transition: width .5s;
+}
+.header .nav > li > a:after{
+    width: 0;
+}
+.header .nav > li > a.active:after{
+    width: 100%;
+}
+.header .nav > li > a:hover:after{
+    width: 100%;
+}
+.header .dropdown{
+    position: relative;
+}
+.header .dropdown .meua{
+    list-style: none;
+    position: absolute;
+    background-color: dodgerblue;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    left: -50%;
+    top: 70%;
+    visibility: hidden;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.header .dropdown .meua  a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.dropdown:hover .meua{
+    visibility: visible;
+    opacity: 1;
+}
+
+/*blog section*/
+.blog-page{
+    padding: 40px 0;
+    background-color: #e9e9e9;
+    overflow: hidden;
+}
+.blog-page h1{
+    padding-top: 70px;
+    float: left;
+}
+.blog-page .blog-list{
+    float: right;
+    padding-top: 80px;
+    list-style: none;
+}
+.blog-page .blog-list li{
+    display: inline-block;
+}
+.blog-page .blog-list li a{
+    text-decoration: none;
+    color: blue;
+}
+/*home*/
+.home{
+    overflow: hidden;
+}
+.home-image{
+    float: left;
+    width: 75%;
+}
+.home-image img{
+    width: 100%;
+}
+.home-list{
+    list-style: none;
+}
+.home-list li{
+    display: inline-block;
+    margin: 25px 0;
+}
+.home-list li.mg{
+    padding: 0 8px;
+}
+.img-desc{
+    margin: 20px 0;
+    color: #555;
+    line-height: 1.5;
+}
+.home-list li .icon{
+    color: dodgerblue;
+}
+.home-image h2{
+    display: inline;
+}
+.img-descs{
+    background-color: #e9e9e9;
+    text-transform: capitalize;
+    padding: 7px;
+    margin-bottom: 4px;
+    padding: 10px 15px;
+}
+.img-descs .icon{
+    color: dodgerblue;
+}
+.jon{
+    border: 1px solid #e8e8e8;
+    padding-left: 210px;
+    margin-top: 40px;
+    position: relative;
+    height: 200px;
+}
+.jon img{
+    width: 190px;
+    height: 180px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.john{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.john-list{
+    list-style: none;
+    float: right;
+    margin: 10px 10px 0 0
+}
+.john-list li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    text-align: center
+}
+.john-list li .icon{
+    color: #fff;
+    line-height: 30px;
+}
+.jon .add{
+    color: #555;
+    line-height: 1.5;
+    border-top: 1px solid #e8e8e8; 
+    margin: 25px 0; 
+    padding-top: 15px;
+}
+.comment{
+    height: 120px;
+    position: relative;
+    padding-left: 120px;
+    border: 1px solid #e8e8e8;
+}
+.comment img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.comment span{
+    margin: 5px 0 0 5px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 400;
+}
+.comment .comment-user{
+    color: #555;
+    font-size: 13px;
+}
+.comment-desc{
+    color: #555;
+    line-height: 1.5;
+    margin-top: 5px; 
+}
+.comment a{
+    float: right;
+    margin: 10px 10px 0 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: blue
+}
+.comment-form input{
+    width: 49%;
+    padding: 5px 0;
+    text-transform: capitalize;
+    background-color: #e1e1e1;
+    border: 0;
+    outline: 0;
+    padding-left: 4px;
+}
+.namee{
+    margin-right: 11px;
+}
+.comment-form input.name{
+    width: 100%;
+    margin-top: 17px;
+    height: 60px;
+}
+.comment-form button{
+   display: block;
+   margin: auto;
+   margin-top: 17px;
+   width: 120px;
+   padding: 10px 0;
+   border: 0;
+   background-color: blue;
+   color: #fff;
+   border-radius: 10px;
+}
+.comment-form button:hover{
+    opacity: 0.7;
+}
+.home-input{
+    float: right;
+    width: 23%;
+}
+.home-input input{
+    width: 100%;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border: 0;
+    outline: 0;
+    
+}
+.category-title{
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.line{
+    width: 40px;
+    height: 3px;
+    background-color: dodgerblue;
+    display: block;
+    margin: 20px 0;
+}
+.category{
+    width: 100%;
+}
+.category h3{
+    font-size: 17px;
+    border-top: 1px solid #e8e8e8;
+    padding: 6px 3px;
+    text-transform: capitalize;
+}
+.category h3 span{
+
+    float: right;
+    color: dodgerblue;
+}
+.category .plan {
+    border-bottom: 1px solid #e8e8e8
+}
+.posts{
+      width: 100%;
+      padding-left: 110px;
+      position: relative;
+}
+.posts.mg{
+    margin: 50px 0;
+}
+.posts.ng{
+    margin-bottom: 56px;
+}
+.posts-img{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.posts-title{
+    margin-bottom: 10px;
+    font-size: 17px
+}
+.posts-desc{
+    color: dodgerblue;
+}
+.tag-desc{
+    background-color: #e9e9e9;
+    text-transform: capitalize;
+    padding: 7px;
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 10px 15px;
+}
+/*footer*/
+.footer{
+    background-color: #222;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-list{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-list li{
+    display: inline-block;
+}
+.footer-list li a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 50%; 
+}
+.footer-list li i{
+    line-height: 50px;
+}
+.footer-list li a:hover{
+    opacity: .7;
+}
